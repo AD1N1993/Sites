@@ -1,0 +1,56 @@
+
+.slider
+   position: relative
+   display: flex
+   padding-top: 108px
+   padding-bottom: 108px
+   z-index: 0
+   &-wrap
+      position: relative
+      text-align: center
+      .slick-track
+         display: flex
+      .slick-list
+         overflow: hidden
+      .slick-arrow
+         font-size: 0
+         border:none
+         position: absolute
+         top: 50%
+      .slick-prev
+         width: 31px
+         height: 50px
+         background: url("../img/carusel/arrow-left.png") 50% 50% no-repeat
+         position: absolute
+         left: 0
+         z-index: 2
+         border: none
+         margin-top: -15px
+      .slick-next
+         position: absolute
+         right: 0
+         width: 31px
+         height: 50px
+         background: url("../img/carusel/arrow-right.png") 50% 50% no-repeat
+         position: absolute
+         z-index: 2
+         border: none
+         margin-top: -15px
+      .slick-dots
+         display: flex
+         justify-content: center
+         align-items: center
+      .slick-dots li
+         list-style: none
+         padding: 0 10px
+      .slick-dots button
+         font-size: 0
+         border-radius: 50%
+         border: none
+         width: 12px
+         height: 12px
+         background-color: #000000
+      li.slick-active button
+         background: transparent
+         border: 1px solid #000000
+         outline: none
