@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css\animate.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap&subset=cyrillic"
+    rel="stylesheet">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=99d29b76-daa8-45ff-bede-2a494444533c"
+    type="text/javascript"></script>
+  <link rel="stylesheet" href="css\style.css">
+  <title>GoodCordon</title>
+</head>
+
+<body>
+  <header class="header">
+
+    <div class="container ">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#">О компании                               </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#link2">преимущества</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#link3">производство</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#link4">Продукция</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">склад</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#link6">наши клиенты</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Сертификаты</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#link8">Отзывы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#link9">контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+      <div class="row align-items-center">
+        <div class="col-3 col-md-4">
+          <div class="header-logo">
+            <img src="img/header_logo.png" alt="GoodCordon">
+          </div>
+          <!-- /.header__logo -->
+        </div>
+        <!-- /.col-4 -->
+        <div class="col-9 col-md-8">
+          <div class="header-contacts">
+            <div class="header-contacts__phones">
+              <div class="header-contacts__phone">8 (347) <span>271-54-28</span></div>
+              <!-- /.header-contacts___phone -->
+              <div class="header-contacts__phone">8 (937) <span>363-30-00</span></div>
+              <!-- /.header-contacts___phone -->
+            </div>
+            <button class="header-contacts__button button">
+              <img src="img\phone.png" alt="Трубка" class="wow tada" data-wow-duration="5s">
+              <span class="hidden-mobile">Заказать звонок</span>
+            </button>
+            <!-- /.header-contacts__button -->
+          </div>
+          <!-- /.header__contacts -->
+        </div>
+        <!-- /.col-8 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+    <!-- overlay modal -->
+    <div class="overlay">
+      <div class="popup">
+        <div class="popup-title">Форма обратной связи</div>
+        <!-- /.popup-title -->
+        <div class="popup-close">&times;</div>
+        <!-- /.popup-close -->
+        <div class="popup-form">
+          <form action="#" class="main-form">
+            <div class="popup-form-header">
+              Получите индивидуальное предложение
+              <span>на производство и поставку изделий</span>
+              <label for="phone" class="popup-form__label">
+                Введите ваш номер телефона:
+              </label>
+              <input type="tel" name="phone" class="popup-form__input" required />
+              <button class="button popup-form__btn">Оставить заявку!</button>
+              <div class="popup-form__note">
+                *Минимальный заказ 500шт
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- /.popup-form -->
+      </div>
+      <!-- /.popup -->
+    </div>
+    <!-- /.overlay -->
+
+  </header>
+  <!-- /.header -->
+  <section class="main dark-bg">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-5 hidden-mobile">
+          <div class="main-img ">
+            <img src="img\main-img\main-img-box.png" alt="Кортон">
+          </div>
+          <!-- maim-img -->
+        </div>
+        <!-- /.col-5 -->
+        <div class="col-12 col-md-12 col-lg-7">
+          <div class="main-text">
+            <h1 class="main-text__title">
+              Производство упаковки из гофрокартона
+            </h1>
+            <!-- /.main-text__title -->
+            <div class="main-text__subtitle">с доставкой по всей России</div>
+            <!-- /.main-text__subtitle -->
+            <div class="main-text__form">
+              <div class="form-title">
+                Получите индивидуальное предложение на производство и поставку
+                гофропродукции
+                <span class="form-title__important">Образцы упаковки бесплатно!</span>
+              </div>
+              <!-- /.form-title -->
+              <form action="#" class="form">
+                <input class="form__input" type="tel" placeholder="Введите номер телефона">
+                <button type="submit" class="button button-big">
+                  Оставить заявку!
+                </button>
+              </form>
+              <small class="form-text__small">
+                *Минимальный заказ 500шт
+              </small>
+            </div>
+            <!-- /.main-text__form -->
+          </div>
+          <!-- /.main-text -->
+        </div>
+        <!-- /.col7 -->
+      </div>
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.main -->
+
+  <section class="numbers bg-gray" id="link2">
+
+    <div class="container ">
+      <div class="row">
+        <div class="col-12 col-md-12 col-lg-4">
+          <div class="number-block">
+            <div class="number-block__title"><span id="advantages"></span> 5 лет
+            </div>
+            <!-- /.numbers-block__title -->
+            <div class="number-block__text"> На рынке изделий из гофрокартона</div>
+            <!-- /.numbers-block__text -->
+          </div>
+          <!-- /.number-block -->
+        </div>
+        <!-- /.col-4 -->
+        <div class="col-12 col-md-12 col-lg-4">
+          <div class="number-block">
+            <div class="number-block__title">до 5 000 000 м<sup>2</sup>
+            </div>
+            <!-- /.numbers-block__title -->
+            <div class="number-block__text">Ежемесячный объем производства гофрокартона</div>
+            <!-- /.numbers-block__text -->
+          </div>
+          <!-- /.number-block -->
+        </div>
+        <!-- /.col-4 -->
+        <div class="col-12 col-md-12 col-lg-4">
+          <div class="number-block">
+            <div class="number-block__title">4 000 м<sup>2</sup>
+            </div>
+            <!-- /.numbers-block__title -->
+            <div class="number-block__text"> Площадь склада</div>
+            <!-- /.numbers-block__text -->
+          </div>
+          <!-- /.number-block -->
+        </div>
+        <!-- /.col-4 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+    <div class="container">
+      <div class="features">
+        <div class="row">
+          <div class="col-12 features-block wow fadeInDown">
+            <div class="features-block__img">
+              <img src="img/features-img/one.svg" alt="#">
+            </div>
+            <!-- /.features-block__img -->
+            <div class="features-block__text">
+              <div class="features-block__title">Производство
+              </div>
+              <!-- /.features-block__title -->
+              <div class="features-block__description"> 4 технологические линии способны выполнить любой заказ любой
+                сложности</div>
+              <!-- /.features-block__description -->
+            </div>
+            <!-- /.col-4 -->
+          </div>
+
+          <div class="col-12 features-block  wow fadeInDown" data-wow-delay="0.1s">
+            <div class="features-block__img">
+              <img src="img/features-img/two.svg" alt="#">
+            </div>
+            <!-- /.features-block__img -->
+            <div class="features-block__text">
+              <div class="features-block__title">Бесплатные образцы
+              </div>
+              <!-- /.features-block__title -->
+              <div class="features-block__description"> Бесплатно делаем образцы гофроупаковки - это помогает
+                заранее
+                увидеть упаковку</div>
+              <!-- /.features-block__description -->
+            </div>
+          </div>
+          <!-- /.col-4 -->
+
+          <div class="col-12 features-block  wow fadeInDown" data-wow-delay="0.3s">
+            <div class="features-block__img">
+              <img src="img/features-img/three.svg" alt="#">
+            </div>
+            <!-- /.features-block__img -->
+            <div class="features-block__text">
+              <div class="features-block__title">Стабильное качество
+              </div>
+              <!-- /.features-block__title -->
+              <div class="features-block__description">Собственная лаборатория контролирует качество на каждом этапе
+                производства</div>
+              <!-- /.features-block__description -->
+            </div>
+          </div>
+
+          <div class="col-12 features-block  wow fadeInDown" data-wow-delay="0.5s">
+          <div class="features-block__img">
+            <img src="img/features-img/four.svg" alt="#">
+          </div>
+          <!-- /.features-block__img -->
+          <div class="features-block__text">
+            <div class="features-block__title">Страховой запас
+            </div>
+            <!-- /.features-block__title -->
+            <div class="features-block__description">Можем хранить запас гофропродукции на своих складах и
+              поставлять
+              его партиями</div>
+            <!-- /.features-block__description -->
+          </div>
+        </div>
+        <!-- /.col-4 -->
+
+        <div class="col-12 features-block  wow fadeInDown" data-wow-delay="0.7s">
+          <div class="features-block__img">
+            <img src="img/features-img/five.svg" alt="#">
+          </div>
+          <!-- /.features-block__img -->
+          <div class="features-block__text">
+            <div class="features-block__title">Флексопечать
+            </div>
+            <!-- /.features-block__title -->
+            <div class="features-block__description">Возможно нанесение вашего логотипа, текста или
+              манипуляционных
+              знаков</div>
+            <!-- /.features-block__description -->
+          </div>
+        </div>
+        <!-- /.col-4 -->
+
+        <div class="col-12 features-block  wow fadeInDown" data-wow-delay="0.9s">
+          <div class="features-block__img">
+            <img src="img/features-img/six.svg" alt="#">
+          </div>
+          <!-- /.features-block__img -->
+          <div class="features-block__text">
+            <div class="features-block__title">Гидрофобные добавки
+            </div>
+            <!-- /.features-block__title -->
+            <div class="features-block__description">На производстве реализована технология, которая позволяет
+              гофрокартону стать прочнее</div>
+            <!-- /.features-block__description -->
+          </div>
+        </div>
+        <!-- /.col-4 -->
+
+        </div>
+      </div>
+      <!-- /.features -->
+    </section>
+    <!-- /.section -->
+
+
+
+  <section class="products" id="link4">
+    <div class="container">
+      <h2 class="section-title wow fadeInDown" class="anchor5"><span id="our-products"></span>Наша продукция</h2>
+      <!-- /.section-title -->
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="products-block wow fadeInDown" data-wow-delay="0.2s">
+            <img src="img/products-box/box1.png" alt="box" class="products-block__img">
+            <div class="products-block__title">Гофрокороб 4-х клапанный
+            </div>
+            <!-- /.products-block__title -->
+            <div class="products-block__buttons">
+              <button class="button button-o">Подробнее</button>
+              <!-- /.button-o -->
+              <button class="button">Получить расчёт</button> <!-- /.button -->
+            </div>
+            <!-- /.products-block__buttons -->
+          </div>
+          <!-- /.products-block -->
+        </div>
+        <!-- /.col-6 -->
+
+        <div class="col-12 col-md-6">
+          <div class="products-block wow fadeInDown" data-wow-delay="0.4s">
+            <img src="img/products-box/box2.png" alt="box" class="products-block__img">
+            <div class="products-block__title">Гофролоток
+            </div>
+            <!-- /.products-block__title -->
+            <div class="products-block__buttons">
+              <button class="button button-o">Подробнее</button> <!-- /.button-o -->
+              <button class="button">Получить расчёт</button> <!-- /.button -->
+            </div>
+            <!-- /.products-block__buttons -->
+          </div>
+          <!-- /.products-block -->
+        </div>
+        <!-- /.col-6 -->
+      </div>
+      <!-- /.row -->
+
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="products-block wow fadeInDown" data-wow-delay="0.6s">
+            <img src="img/products-box/box3.png" alt="box" class="products-block__img">
+            <div class="products-block__title">Гофрокороб самосборный (сложная высечка)
+            </div>
+            <!-- /.products-block__title -->
+            <div class="products-block__buttons">
+              <button class="button button-o">Подробнее</button> <!-- /.button-o -->
+              <button class="button">Получить расчёт</button> <!-- /.button -->
+            </div>
+            <!-- /.products-block__buttons -->
+          </div>
+          <!-- /.products-block -->
+        </div>
+        <!-- /.col-6 -->
+        <div class="col-12 col-md-6">
+          <div class="products-block wow fadeInDown" data-wow-delay="0.8s">
+            <img src="img/products-box/box4.png" alt="box" class="products-block__img">
+            <div class="products-block__title marginsixty">Листовой гофрокартон</div>
+            <!-- /.products-block__title -->
+            <div class="products-block__buttons">
+              <button class="button button-o">Подробнее</button> <!-- /.button-o -->
+              <button class="button">Получить расчёт</button> <!-- /.button -->
+            </div>
+            <!-- /.products-block__buttons -->
+          </div>
+          <!-- /.products-block -->
+        </div>
+        <!-- /.col-6 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.products -->
+
+
+  <section class="offer dark-bg">
+    <div class="container">
+      <h2 class="offer-title">Получите индивидуальное предложение
+        <span class="offer-title__small">на производство и поставку изделий</span></h2>
+      <!-- /.offer-title -->
+      <form action="post" class="offer-form">
+        <label for="offer-phone" class="offer-form__label">Введите ваш номер телефона:</label>
+        <!-- /.form-offer__label -->
+        <input type="tel" class="offer-form__input" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" id="offer-phone">
+        <button type="submit" class="button offer-form__button">Оставить заявку!</button>
+        <!-- /.button -->
+        <small class="form-text_small">*Минимальный заказ 500шт</small>
+      </form>
+      <!-- /.form-offer -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.offer -->
+
+
+
+  <section class="production">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-7 order-last order-lg-first">
+          <div class="slider">
+            <div class="slider__item"><img src="img/slide/slide1-machine.jpg" alt="dream"></div>
+            <div class="slider__item"><img src="img/slide/slode2-conveir.jpg" alt="dream"></div>
+            <div class="slider__item"><img src="img/slide/slide3-gofr.jpg" alt="dream"></div>
+            <div class="slider__item"><img src="img/slide/slide4-conveirTwo.jpg" alt="dream"></div>
+            <div class="slider__item"><img src="img/slide/slide5-cardboard.jpg" alt="dream"></div>
+            <div class="slider__item"><img src="img/slide/slide6-cardboard.jpg" alt="dream"></div>
+          </div>
+          <div class="slider-nav hidden-mobile">
+            <div class="nav__item"><img src="img/slide/slide1-machine_thumb.jpg" alt=""></div>
+            <div class="nav__item"><img src="img/slide/slide2-conveir_thumb.jpg" alt=""></div>
+            <div class="nav__item"><img src="img/slide/slide3-gofr_thumb.jpg" alt=""></div>
+            <div class="nav__item"><img src="img/slide/slide4-conveirTwo_thumbs.jpg" alt=""></div>
+            <div class="nav__item"><img src="img/slide/slide5-cardboard_thumbs.jpg" alt=""></div>
+            <div class="nav__item"><img src="img/slide/slide6-cardboard_thumbs.jpg" alt=""></div>
+          </div>
+        </div>
+        <!-- col-7 -->
+        <div class="col-12 col-lg-5 order-first order-lg-last">
+          <div class="production-text">
+            <div class="production-text__title" id="link3">Производство</div>
+            <div class="production-text__description">
+              <div class="point">Современное оборудование позволяет произ- водить до 5 миллионов квадратных
+                метров
+                гофрокартона ежемесячно. Гофрокороба и лотки производятся по ГОСТу или чертежам заказчика.
+
+              </div>
+              <div class="point">Досконально прорабатываем конструкции коро- бов и составы сырья, учитывая
+                условия
+                хранения, транспортировки и производства вашей продукции.</div>
+              <div class="point">Возможно нанесение цветной флексопечати на поверхность коробов.</div>
+            </div>
+          </div>
+          <!-- /.production-text -->
+        </div>
+        <!-- /.col-5 -->
+      </div>
+      <!-- row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.production -->
+
+  <section class="clients" id="link6">
+    <div class="container">
+      <h2 class="section-title clients-title">Наши клиенты</h2>
+      <!-- /.section-title -->
+      <div class="row">
+        <div class="col-6 col-lg-3">
+          <div class="clients-partner"><img src="img/partners/partner1.png" alt=""></div>
+          <!-- /.clients-partner -->
+        </div>
+        <!-- /.col-3 -->
+        <div class="col-6 col-lg-3">
+          <div class="clients-partner"><img src="img/partners/partner2.png" alt=""></div>
+          <!-- /.clients-partner -->
+        </div>
+        <!-- /.col-3 -->
+        <div class="col-6 col-lg-3">
+          <div class="clients-partner"><img src="img/partners/partner3.png" alt=""></div>
+          <!-- /.clients-partner -->
+        </div>
+        <!-- /.col-3 -->
+        <div class="col-6 col-lg-3">
+          <div class="clients-partner"><img src="img/partners/partner4.png" alt=""></div>
+          <!-- /.clients-partner -->
+        </div>
+        <!-- /.col-3 -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-6 col-lg-3">
+          <div class="clients-partner"><img src="img/partners/partner5.png" alt=""></div>
+          <!-- /.clients-partner -->
+        </div>
+        <!-- /.col-3 -->
+        <div class="col-6 col-lg-3">
+          <div class="clients-partner"><img src="img/partners/partner6.png" alt=""></div>
+          <!-- /.clients-partner -->
+        </div>
+        <!-- /.col-3 -->
+        <div class="col-6 col-lg-3">
+          <div class="clients-partner"><img src="img/partners/partner7.png" alt=""></div>
+          <!-- /.clients-partner -->
+        </div>
+        <!-- /.col-3 -->
+        <div class="col-6 col-lg-3">
+          <div class="clients-partner"><img src="img/partners/partner8.png" alt=""></div>
+          <!-- /.clients-partner -->
+        </div>
+        <!-- /.col-3 -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-6 col-lg-3">
+          <div class="clients-partner"><img src="img/partners/partner9.png" alt=""></div>
+          <!-- /.clients-partner -->
+        </div>
+        <!-- /.col-3 -->
+        <div class="col-6 col-lg-3">
+          <div class="clients-partner"><img src="img/partners/partner10.png" alt=""></div>
+          <!-- /.clients-partner -->
+        </div>
+        <!-- /.col-3 -->
+        <div class="col-6 col-lg-3">
+          <div class="clients-partner"><img src="img/partners/partner11.png" alt=""></div>
+          <!-- /.clients-partner -->
+        </div>
+        <!-- /.col-3 -->
+        <div class="col-6 col-lg-3">
+          <div class="clients-partner"><img src="img/partners/partner12.png" alt=""></div>
+          <!-- /.clients-partner -->
+        </div>
+        <!-- /.col-3 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.clients -->
+
+  <section class="review bg-gray" id="link8">
+    <div class="container">
+      <h2 class="section-title review-title">Отзывы о сотрудничестве</h2>
+      <!-- /.section-title -->
+      <div class="review-slider">
+        <div class="review-slider__item"><img src="img/slider-review/doc1.jpg" alt=""></div>
+        <div class="review-slider__item"><img src="img/slider-review/doc2.jpg" alt=""></div>
+        <div class="review-slider__item"><img src="img/slider-review/doc3.jpg" alt=""></div>
+        <div class="review-slider__item"><img src="img/slider-review/doc3.jpg" alt=""></div>
+      </div>
+      <!-- /.review-slider -->
+    </div>
+    <!-- /.review -->
+  </section>
+  <!-- /.container -->
+
+  <section class="contacts" id="link9">
+    <div class="contacts-block">
+      <div class="contacts-block__address contacts-block_icon1">
+        <span class="contacts-block__title">Адрес офиса</span>
+        г. Уфа, Проспект октября, 46
+        <span class="contacts-block__title">Адрес склада</span>
+        г. Уфа, ул. Майкопская, 65/2
+      </div>
+      <!--  contacts-block__address -->
+      <div class="contacts-block__phone contacts-block_icon2">
+        <span class="contacts-block__title">Тел. отдела продаж:</span>
+        8 (347) 271-54-28<br>
+        8 (937) 363-30-00
+      </div>
+      <!--  contacts-block__address -->
+      <div class="contacts-block__cta">
+        <button class="button">Заказать звонок</button>
+      </div>
+      <!--  contacts-block__cta -->
+      <div class="contacts-block__email contacts-block_icon3">
+        <span class="contacts-block__title">Е-mail</span>
+        urals.karton@gmail.com
+      </div><!--  contacts-block__email -->
+    </div>
+    <div id="map" class="map"></div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-link"><a href="#" class="footer-link__ural">© www.gofra-ural.ru 2016, все права защищены</a>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script src="js/slick.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
