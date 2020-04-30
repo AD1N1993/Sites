@@ -1,0 +1,279 @@
+html {
+   box-sizing: border-box;
+   outline: none;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+   outline: none;
+}
+
+body {
+   font-family: 'Fira Sans', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   background-color: #18191f;
+   color: #ffffff;
+   text-transform: uppercase;
+   min-width: 320px;
+   overflow-x: hidden;
+}
+
+a {
+   display: inline-block;
+   text-decoration: none;
+   color: #ffffff
+}
+
+ul,
+li {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.subtitle {
+   font-weight: 800;
+   font-size: 40px;
+   text-align: right;
+   margin-right: 80px;
+   margin-top: -70px;
+
+   &__head {
+      margin-top: 8px;
+      padding-right: 5px;
+
+      span {
+         font-weight: 100;
+      }
+   }
+}
+
+.descr {
+   font-weight: 800;
+   font-size: 40px;
+   text-align: left;
+   padding-left: 130px;
+   margin-top: -135px;
+
+   &__head {
+      position: relative;
+
+      img {
+         padding-left: 366px;
+         position: absolute;
+         top: 0;
+         left: 0;
+      }
+
+      .holder__slider-list {
+         position: absolute;
+         top: -18px;
+         left: 210px;
+
+         li {
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+         }
+
+         img {
+            position: static;
+            padding-left: 0;
+
+         }
+      }
+   }
+}
+
+.headline-right {
+   font-size: 22px;
+   line-height: 32px;
+   text-align: right;
+   letter-spacing: 7.33333px;
+   text-transform: uppercase;
+   opacity: 0.5;
+   position: relative;
+   padding-right: 103px;
+   display: inline-block;
+   font-weight: 100;
+
+   &::before {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 1px;
+      background-color: #fff;
+      position: absolute;
+      right: 0;
+      top: 50%
+   }
+}
+
+.headline-left {
+   font-size: 22px;
+   line-height: 32px;
+   text-align: right;
+   letter-spacing: 7.33333px;
+   text-transform: uppercase;
+   opacity: 0.5;
+   position: relative;
+   padding-left: 103px;
+   display: inline-block;
+   font-weight: 100;
+
+   &::before {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 1px;
+      background-color: #fff;
+      position: absolute;
+      left: 0;
+      top: 50%
+   }
+}
+
+
+.title {
+   span {
+      position: relative;
+      left: -40px;
+      font-weight: 800;
+      font-size: 200px;
+      line-height: 156px;
+      color: rgba(#ffffff, 0.09);
+   }
+
+   h3 {
+      position: absolute;
+      top: -20px;
+      left: 300px;
+      margin: 0;
+      color: #ffffff;
+      font-size: 80px;
+
+      &::after {
+         content: "";
+         width: 80px;
+         height: 1px;
+         background-color: $green-color;
+         position: absolute;
+         top: 30px;
+         right: 0;
+      }
+   }
+}
+
+.container {
+   max-width: 1980px;
+   margin: 0 auto;
+}
+
+.btn {
+   font-weight: 800;
+   font-size: 40px;
+   line-height: 36px;
+   vertical-align: middle;
+
+   span {
+      display: inline-block;
+      padding: 27px 57px 27px 15px;
+      background-color: $green-color;
+      margin-left: 19px;
+      position: relative;
+
+      &::before {
+         content: "";
+         width: 20px;
+         height: 1px;
+         position: absolute;
+         top: 50%;
+         left: -10px;
+         background-color: #fff;
+      }
+
+      &::after {
+         content: "";
+         width: 25px;
+         height: 21px;
+         background: url('../img/arrow-right.svg') center center no-repeat;
+         position: absolute;
+         top: 50%;
+         right: 10px;
+         transform: translateY(-50%);
+
+      }
+   }
+}
+
+.quantity {
+   display: inline-block;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+
+input[type=number] {
+   -moz-appearance: textfield;
+}
+
+.quantity input {
+   width: 45px;
+   height: 42px;
+   display: block;
+   border: none;
+   background-color: transparent;
+   font-size: 40px;
+      line-height: 36px;
+      color: #ffffff;
+      font-weight: 800;
+
+}
+
+.quantity input:focus {
+   outline: 0;
+}
+
+.quantity-nav {
+   float: left;
+   position: absolute;
+   height: 42px;
+   top: 30px;
+   right: 0;
+}
+
+.quantity-button {
+   position: relative;
+   cursor: pointer;
+   width: 0px;
+   text-align: center;
+   color: #333;
+   font-size: 40px;
+   line-height: 1.7;
+   transform: translateX(-100%);
+   user-select: none;
+   color:$green-color;
+   font-weight:300;
+}
+
+.quantity-button.quantity-up {
+   position: absolute;
+   height: 0;
+   top: 0px;
+   right: 50px;
+
+}
+
+.quantity-button.quantity-down {
+   position: absolute;
+   top: -5px;
+   height: 0;
+   right: 80px;
+   font-size: 45px;
+}
